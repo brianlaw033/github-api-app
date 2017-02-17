@@ -1,0 +1,12 @@
+$blue : #4761A1;
+$white : #ffffff;
+.wt{
+  background: $blue;
+  border-color: $blue;
+  color: $white;
+  outline: none;
+}
+
+#reposname #reposdate{
+  list-style: none;
+}

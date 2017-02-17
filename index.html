@@ -3,12 +3,20 @@
     <link rel="stylesheet" href="build/css/vendor.css">
     <script src="build/js/vendor.min.js"></script>
     <script type="text/javascript" src="build/js/app.js"></script>
+    <link rel="stylesheet" href="build/css/style.css">
     <title>github-api-app</title>
   </head>
-  <div class='container'>
+  <div class='container' style='padding: 50px;'>
+    <div class='row'>
     <input id='username' type='text'>
-    <button type='button' id ='btn'>Submit</button>
-  <div id='name'></div>
-  <div id='link'></div>
+    <button type='button' class='btn wt' id ='basicInfo'>Basic Info</button>
+    <button type='button' class='btn wt' id ='reposDate'>Repository Date</button>
+    </div>
+    <div class='row' id='loginName'></div>
+    <div class='row' id='link'></div>
+    <div class='row'>
+      <ul class='col-sm-6' id='reposname' style='list-style: none;'></ul>
+      <ul class='col-sm-6' id='reposdate' style='list-style: none;'></ul>
+    </div>
   </div>
 </html>
