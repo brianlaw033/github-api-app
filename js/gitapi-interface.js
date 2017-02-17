@@ -11,9 +11,9 @@ var displayInfo = function(response){
     $('#reposdate').empty();
     for (i=0;i<reposArray.length; i++){
       $('#reposname').append('<li>'+ reposArray[i].name + '</li>');
+      $('#reposdes').append('<li>'+ reposArray[i].description + '</li>');
       $('#reposdate').append('<li>'+ moment(reposArray[i].created_at).format('LLL')+ '</li>');
     }
-    console.log(reposArray[1].name);
   }
 };
 
