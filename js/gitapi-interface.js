@@ -7,6 +7,8 @@ var displayInfo = function(response){
     $('#link').html('Link: '+ response.url);
   }else if (mode === '/repos'){
     var reposArray = response;
+    $('#reposname').empty();
+    $('#reposdate').empty();
     for (i=0;i<reposArray.length; i++){
       $('#reposname').append('<li>'+ reposArray[i].name + '</li>');
       $('#reposdate').append('<li>'+ moment(reposArray[i].created_at).format('LLL')+ '</li>');
